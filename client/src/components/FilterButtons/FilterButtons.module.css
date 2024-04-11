@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "inder-regular";
+  src: url("assets/fonts/Inder-Regular.ttf");
+}
+
+.ContainerButtons {
+  display: flex;
+  align-content: space-between;
+  margin: 1rem;
+}
+
+.FilterButton {
+  font-family: "inder-regular";
+  background-color: transparent;
+  border: none;
+  color: #1d3557;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 760px) {
+  .ContainerButtons {
+    gap: 15rem;
+  }
+}
+.FilterButton {
+  font-size: 1.5rem;
+}
