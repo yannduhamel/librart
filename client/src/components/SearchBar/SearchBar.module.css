@@ -1,0 +1,21 @@
+.SearchBar {
+  margin-bottom: 1rem;
+}
+.Input {
+  height: 2.5rem;
+  width: 14rem;
+  border-radius: 4px 4px 4px 4px;
+  background-color: transparent;
+}
+.SearchButton {
+  height: 2.5rem;
+  border-radius: 0px 4px 4px 0px;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 760px) {
+  .Input {
+    width: 45rem;
+  }
+}
