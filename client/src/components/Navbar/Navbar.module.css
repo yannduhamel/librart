@@ -1,0 +1,17 @@
+.Navbar {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7ede2;
+  height: 5em;
+  width: 100%;
+}
+
+@media screen and (min-width: 761px) {
+  .Navbar {
+    height: 7em;
+  }
+}
