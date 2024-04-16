@@ -13,6 +13,9 @@ function Menu() {
     >
       <ul className={styles.navbarList}>
         <li className={styles.navbarItem}>
+          <p className={styles.navbarLink}>Accueil</p>
+        </li>
+        <li className={styles.navbarItem}>
           <p className={styles.navbarLink}>Mes favoris</p>
         </li>
         <li className={styles.navbarItem}>
