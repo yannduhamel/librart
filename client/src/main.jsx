@@ -31,12 +31,13 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "*",
-        element: <h1>Page not found</h1>,
-      },
-      {
         path: "/cgu",
         element: <CGUPage />,
+      },
+
+      {
+        path: "*",
+        element: <h1>Page not found</h1>,
       },
     ],
   },
