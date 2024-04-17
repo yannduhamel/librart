@@ -7,6 +7,7 @@ import App from "./App";
 import CatalogPage from "./pages/CatalogPage/CatalogPage";
 import HomePage from "./pages/HomePage/HomePage";
 import LicencePage from "./pages/LicencePage/LicencePage";
+import CGUPage from "./pages/CGUPage/CGUPage";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/licence",
         element: <LicencePage />,
+      },
+      {
+        path: "/cgu",
+        element: <CGUPage />,
       },
     ],
   },
