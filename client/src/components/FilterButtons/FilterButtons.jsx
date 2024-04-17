@@ -4,10 +4,10 @@ function FilterButtons() {
   return (
     <div className={styles.ContainerButtons}>
       <button className={styles.FilterButton} type="button">
-        Japon
+        France
       </button>
       <button className={styles.FilterButton} type="button">
-        Baroque
+        1655
       </button>
       <button className={styles.FilterButton} type="button">
         Van Gogh
