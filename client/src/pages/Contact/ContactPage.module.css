@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "inder-regular";
+  src: url("assets/fonts/Inder-Regular.ttf");
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: medium;
+}
+
+.text {
+  padding: 0 1rem;
+  text-align: start;
+}
+
+p {
+  padding: 0 1rem;
+  text-align: start;
+}
+
+h1,
+h2 {
+  padding: 0 1rem;
+  color: #1d3557;
+  font-family: "inder-regular";
+  text-align: center;
+}
+
+.reseaux {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.facebookImage {
+  height: 30px;
+}
+
+.instagram {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.instagramImage {
+  height: 30px;
+}
+
+.twitter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.twitterImage {
+  height: 30px;
+}
+
+.mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mailImage {
+  height: 20px;
+}
+
+@media screen and (min-width: 761px) {
+  p {
+    padding: 0 10rem;
+  }
+  h1,
+  h2 {
+    padding: 0 10rem;
+  }
+
+  .reseaux {
+    display: flex;
+    width: 150px;
+    margin: auto;
+    padding-top: 40px;
+  }
+
+  .facebookImage {
+    width: 11%;
+  }
+
+  .instagramImage {
+    width: 11%;
+  }
+
+  .twitterImage {
+    width: 11%;
+  }
+
+  .mailImage {
+    width: 11%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  p {
+    padding: 0 30rem;
+  }
+  h1,
+  h2 {
+    padding: 0 30rem;
+  }
+}
