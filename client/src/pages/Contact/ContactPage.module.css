@@ -1,19 +1,6 @@
-* {
-  background-color: #f7ede2;
-}
-
-:root {
-  --main-color: #1d3557;
-}
-
 @font-face {
   font-family: "inder-regular";
   src: url("assets/fonts/Inder-Regular.ttf");
-}
-
-@font-face {
-  font-family: "montserrat-alternates";
-  src: url("assets\fonts\MontserratAlternates-Regular.ttf");
 }
 
 .main {
@@ -23,11 +10,16 @@
   font-size: medium;
 }
 
-p {
+.text {
   padding: 0 1rem;
-  font-family: "montserrat-alternates";
   text-align: start;
 }
+
+p {
+  padding: 0 1rem;
+  text-align: start;
+}
+
 h1,
 h2 {
   padding: 0 1rem;
@@ -36,104 +28,86 @@ h2 {
   text-align: center;
 }
 
-.h1 {
-  color: var(--main-color);
-  font-size: 30px;
-  margin: auto;
-  padding-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.h2 {
-  color: var(--main-color);
-  font-size: 18px;
-  margin: auto;
-  padding-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  width: 80%;
-}
-
-.text {
-  color: var(--main-color);
-  font-size: 12px;
-  display: flex;
-  width: 70%;
-  margin: auto;
-  text-align: center;
-}
-*/ .réseaux {
+.reseaux {
   display: flex;
   flex-direction: column;
 }
 
 .facebook {
   display: flex;
-  margin: auto;
-  width: 5%;
-  padding-top: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.facebookImage {
+  height: 30px;
 }
 
 .instagram {
   display: flex;
-  margin: auto;
-  width: 5%;
-  padding-top: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.instagramImage {
+  height: 30px;
 }
 
 .twitter {
   display: flex;
-  margin: auto;
-  width: 5%;
-  padding-top: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.twitterImage {
+  height: 30px;
 }
 
 .mail {
   display: flex;
-  margin: auto;
-  width: 5%;
-  padding-top: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mailImage {
+  height: 20px;
 }
 
 @media screen and (min-width: 761px) {
-  .text {
-    font-size: 17px;
-    padding-top: 5%;
+  p {
+    padding: 0 10rem;
   }
-  .réseaux {
+  h1,
+  h2 {
+    padding: 0 10rem;
+  }
+
+  .reseaux {
     display: flex;
     width: 150px;
     margin: auto;
     padding-top: 40px;
   }
 
-  .facebook {
+  .facebookImage {
     width: 11%;
   }
 
-  .instagram {
+  .instagramImage {
     width: 11%;
   }
 
-  .twitter {
+  .twitterImage {
     width: 11%;
   }
 
-  .mail {
+  .mailImage {
     width: 11%;
   }
-}
-
-p {
-  padding: 0 10rem;
-}
-h1,
-h2 {
-  padding: 0 10rem;
 }
 
 @media screen and (min-width: 1280px) {

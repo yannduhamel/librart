@@ -16,41 +16,41 @@ function ContactPage() {
         pour répondre à toutes vos questions.
       </div>
 
-      <div className={styles.réseaux}>
-        <div>
-          <p>https//www.facebook.com/LesLapinsAgiles</p>
+      <div className={styles.reseaux}>
+        <div className={styles.facebook}>
           <img
-            className={styles.facebook}
+            className={styles.facebookImage}
             src="../src/assets/images/Facebook.png"
             alt="logo facebook"
           />
+          <p>@librArt</p>
         </div>
 
-        <div>
-          <p>https://www.instagram.com/LibrArt</p>
+        <div className={styles.instagram}>
           <img
-            className={styles.instagram}
+            className={styles.instagramImage}
             src="../src/assets/images/Instagram.png"
             alt="logo instagram"
           />
+          <p>@librArt</p>
         </div>
 
-        <div>
-          <p>https://www.twitter.com/LibrArt</p>
+        <div className={styles.twitter}>
           <img
-            className={styles.twitter}
+            className={styles.twitterImage}
             src="../src/assets/images/Twitter.png"
             alt="logo twitter"
           />
+          <p>@librArt</p>
         </div>
 
-        <div>
-          <p>contact@librart.com</p>
+        <div className={styles.mail}>
           <img
-            className={styles.mail}
+            className={styles.mailImage}
             src="../src/assets/images/Email.png"
             alt="logo mail"
           />
+          <p>@librArt</p>
         </div>
       </div>
     </div>
