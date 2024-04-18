@@ -3,6 +3,11 @@
   src: url("assets/fonts/Inder-Regular.ttf");
 }
 
+@font-face {
+  font-family: "montserrat-alternates";
+  src: url("assets\fonts\MontserratAlternates-Regular.ttf");
+}
+
 body {
   background-color: #f7ede2;
   margin: 0;
