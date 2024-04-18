@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         path: "/licence",
         element: <LicencePage />,
       },
-      
+
       {
         path: "/contact",
         element: <ContactPage />,
