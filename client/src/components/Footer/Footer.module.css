@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "montserrat-alternates";
+  src: url("assets\fonts\MontserratAlternates-Regular.ttf");
+}
+
+.Footer {
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  height: 5em;
+  width: 100%;
+  font-size: 0.8rem;
+  font-family: "montserrat-alternates";
+  color: #1d3557;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+a:visited {
+  color: #1d3557;
+}
+
+a:hover {
+  color: #f28482;
+}
+@media screen and (min-width: 761px) {
+  .Footer {
+    height: 7em;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,21 @@
+.Logo {
+  display: flex;
+  height: 8em;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.Image {
+  height: 8em;
+  margin: 0;
+}
+
+@media screen and (min-width: 761px) {
+  .Logo {
+    height: 13em;
+  }
+  .Image {
+    height: 13em;
+  }
+}
