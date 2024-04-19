@@ -33,6 +33,52 @@ app.get("/painting/:id", (req, res) => {
   }
 });
 
+app.get("/country/:nationality", (req, res) => {
+  const { nationality } = req.params;
+
+  const wantedCountry = paintingObjects.filter(
+    (p) => p.artistNationality === nationality
+  );
+
+  if (wantedCountry) {
+    res.json(wantedCountry);
+  } else {
+    res.sendStatus(404).json({
+      message: "Painting not found",
+    });
+  }
+});
+
+app.get("/year/:year", (req, res) => {
+  const { year } = req.params;
+
+  const wantedYear = paintingObjects.filter((p) => p.objectDate === year);
+
+  if (wantedYear) {
+    res.json(wantedYear);
+  } else {
+    res.sendStatus(404).json({
+      message: "Painting not found",
+    });
+  }
+});
+
+app.get("/artist/:artist", (req, res) => {
+  const { artist } = req.params;
+
+  const wantedArtist = paintingObjects.filter((p) =>
+    p.artistDisplayName.includes(artist)
+  );
+
+  if (wantedArtist) {
+    res.json(wantedArtist);
+  } else {
+    res.sendStatus(404).json({
+      message: "Painting not found",
+    });
+  }
+});
+
 // Start the server and listen on the specified port
 app
   .listen(port, () => {
