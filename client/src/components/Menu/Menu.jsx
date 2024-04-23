@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./Menu.module.css";
 
 function Menu() {
@@ -13,16 +14,13 @@ function Menu() {
     >
       <ul className={styles.navbarList}>
         <li className={styles.navbarItem}>
-          <p className={styles.navbarLink}>Accueil</p>
+          <Link to="/">Accueil</Link>
         </li>
         <li className={styles.navbarItem}>
-          <p className={styles.navbarLink}>Mes favoris</p>
+          <Link to="/contact">Suivez-nous</Link>
         </li>
         <li className={styles.navbarItem}>
-          <p className={styles.navbarLink}>Rencontrons-nous</p>
-        </li>
-        <li className={styles.navbarItem}>
-          <p className={styles.navbarLink}>Licence</p>
+          <Link to="/licence">Licence</Link>
         </li>
       </ul>
       <button
