@@ -9,7 +9,7 @@ function Logo() {
     <div>
       <button className={styles.Logo} type="button" onClick={redirectionToHome}>
         <img
-          className={styles.Image}
+          className={styles.logoImage}
           src="src/assets/images/LibrArt.png"
           alt="logo du site"
         />
