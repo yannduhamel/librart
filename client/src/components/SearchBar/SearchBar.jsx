@@ -1,16 +1,23 @@
+import PropTypes from "prop-types";
 import styles from "./SearchBar.module.css";
 
-function SearchBar() {
+function SearchBar({ handleSubmit }) {
   return (
     <div className={styles.SearchBar}>
-      <form role="search" method="get" action="">
+      <form onSubmit={handleSubmit} role="search">
         <input className={styles.Input} type="text" placeholder="Search by " />
-        <button className={styles.SearchButton} type="submit">
+        <button
+          className={styles.SearchButton}
+          type="submit">
           🔍︎
         </button>
       </form>
     </div>
   );
 }
+
+SearchBar.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
+};
 
 export default SearchBar;

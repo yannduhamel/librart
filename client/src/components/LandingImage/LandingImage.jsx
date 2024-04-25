@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import PropTypes from "prop-types";
 import styles from "./LandingImage.module.css";
 
-function LandingImage() {
-  const [imageUrl, setImageUrl] = useState("");
+function LandingImage({ imageUrl, setImageUrl}) {
 
   useEffect(() => {
     fetch(
@@ -12,11 +12,18 @@ function LandingImage() {
       .then((data) => {
         setImageUrl(data.primaryImage);
       });
+      
+      
   });
 
   return (
     <img className={styles.img} src={imageUrl} alt="Painting Public Domain" />
   );
 }
+
+LandingImage.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  setImageUrl: PropTypes.func.isRequired,
+};
 
 export default LandingImage;
