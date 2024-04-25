@@ -1,14 +1,16 @@
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
 function Catalog({ filter }) {
   return (
     <div>
       {filter.map((item) => (
-        <img
-          key={item.id}
-          src={item.primaryImageSmall}
-          alt="Filtered Painting"
-        />
+        <div key={item.objectID}>
+          <img src={item.primaryImageSmall} alt="Filtered Painting" />
+          <NavLink to={`/detail/${item.objectID}`}>
+            Plus de détails
+          </NavLink>{" "}
+        </div>
       ))}
     </div>
   );
