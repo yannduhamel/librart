@@ -4,16 +4,20 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 import styles from "./HomePage.module.css";
 import LandingImage from "../../components/LandingImage/LandingImage";
 import Catalog from "../../components/Catalog/Catalog";
+import SearchBarCatalog from "../../components/SearchBarCatalog/SearchBarCatalog";
 
 function HomePage() {
   const [filter, setFilter] = useState(null);
   const [displayFilteredCountry, setDisplayFilteredCountry] = useState(false);
+  const [searchResults, setSearchResults] = useState([]);
+  const [imageUrl, setImageUrl] = useState("");
 
   useEffect(() => {
     if (displayFilteredCountry) {
       fetch("http://localhost:3310/country/French")
         .then((res) => res.json())
         .then((response) => setFilter(response));
+      setSearchResults([]);
     }
   }, [displayFilteredCountry]);
 
@@ -24,6 +28,7 @@ function HomePage() {
       fetch("http://localhost:3310/artist/Vincent")
         .then((res) => res.json())
         .then((response) => setFilter(response));
+      setSearchResults([]);
     }
   }, [displayFilteredArtist]);
 
@@ -34,8 +39,18 @@ function HomePage() {
       fetch("http://localhost:3310/year/1655")
         .then((res) => res.json())
         .then((response) => setFilter(response));
+      setSearchResults([]);
     }
   }, [displayFilteredYear]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const inputValue = event.target[0].value;
+    fetch(`http://localhost:3310/search/${inputValue}`)
+      .then((res) => res.json())
+      .then((response) => setSearchResults(response));
+    setFilter("");
+  };
 
   return (
     <div className={styles.homeMain}>
@@ -48,10 +63,13 @@ function HomePage() {
         displayFilteredYear={displayFilteredYear}
       />
       <h1>Votre galerie d’oeuvres d’art en libre accès</h1>
-      <SearchBar />
+      <SearchBar handleSubmit={handleSubmit} />
       <div className={styles.imgContainer}>
-        {!filter && <LandingImage />}
         {filter && <Catalog filter={filter} />}
+        {searchResults && <SearchBarCatalog searchResults={searchResults} />}
+        {!filter && searchResults.length === 0 && (
+          <LandingImage imageUrl={imageUrl} setImageUrl={setImageUrl} />
+        )}
       </div>
     </div>
   );

@@ -37,12 +37,12 @@ function FilterButtons({
 }
 
 FilterButtons.propTypes = {
-  displayFilteredArtist: PropTypes.string.isRequired,
-  setDisplayFilteredArtist: PropTypes.string.isRequired,
-  displayFilteredCountry: PropTypes.string.isRequired,
-  setDisplayFilteredCountry: PropTypes.string.isRequired,
-  setDisplayFilteredYear: PropTypes.number.isRequired,
-  displayFilteredYear: PropTypes.number.isRequired,
+  displayFilteredArtist: PropTypes.bool.isRequired,
+  setDisplayFilteredArtist: PropTypes.func.isRequired,
+  displayFilteredCountry: PropTypes.bool.isRequired,
+  setDisplayFilteredCountry: PropTypes.func.isRequired,
+  setDisplayFilteredYear: PropTypes.func.isRequired,
+  displayFilteredYear: PropTypes.bool.isRequired,
 };
 
 export default FilterButtons;

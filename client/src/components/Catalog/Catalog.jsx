@@ -1,13 +1,21 @@
-function Catalog({filter}){
- 
+import PropTypes from "prop-types";
+
+function Catalog({ filter }) {
   return (
-    filter.map((item) => (
+    <div>
+      {filter.map((item) => (
         <img
           key={item.id}
           src={item.primaryImageSmall}
           alt="Filtered Painting"
         />
-    )))
+      ))}
+    </div>
+  );
 }
+
+Catalog.propTypes = {
+  filter: PropTypes.func.isRequired,
+};
 
 export default Catalog;
