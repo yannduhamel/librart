@@ -3,119 +3,74 @@
   src: url("assets/fonts/Inder-Regular.ttf");
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: medium;
+* {
+  box-sizing: border-box;
 }
-
-.text {
-  padding: 0 1rem;
-  text-align: start;
+.contactSubtitle {
+  font-size: larger;
 }
-
-p {
-  padding: 0 1rem;
-  text-align: start;
-}
-
-h1,
-h2 {
-  padding: 0 1rem;
+.contactParagraph {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "montserrat-alternates";
   color: #1d3557;
-  font-family: "inder-regular";
-  text-align: center;
+}
+
+.socialNetwork {
+  font-family: "montserrat-alternates";
 }
 
 .reseaux {
-  display: flex;
-  flex-direction: column;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
-
-.facebook {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.facebookImage {
-  height: 30px;
-}
-
-.instagram {
+.facebook,
+.instagram,
+.twitter,
+.mail {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
+  gap: 0.5rem;
+  margin-left: 0;
 }
 
+.facebookImage,
 .instagramImage {
   height: 30px;
 }
 
-.twitter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .twitterImage {
   height: 30px;
+  min-width: 30px;
 }
-
-.mail {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .mailImage {
-  height: 20px;
+  height: 30px;
+  max-width: 30px;
 }
-
 @media screen and (min-width: 761px) {
-  p {
-    padding: 0 10rem;
-  }
-  h1,
-  h2 {
-    padding: 0 10rem;
+  .contactSubtitle {
+    font-size: x-large;
   }
 
-  .reseaux {
-    display: flex;
-    width: 150px;
-    margin: auto;
-    padding-top: 40px;
-  }
-
-  .facebookImage {
-    width: 11%;
-  }
-
-  .instagramImage {
-    width: 11%;
-  }
-
-  .twitterImage {
-    width: 11%;
-  }
-
-  .mailImage {
-    width: 11%;
+  .contactParagraph {
+    font-size: larger;
+    line-height: 2rem;
+    width: 50%;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  p {
-    padding: 0 30rem;
+  .contactSubtitle {
+    font-size: 1.4rem;
   }
-  h1,
-  h2 {
-    padding: 0 30rem;
+  .contactParagraph {
+    font-size: larger;
+    line-height: 2rem;
+    width: 50%;
+    margin: 0 auto;
   }
 }
