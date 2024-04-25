@@ -2,8 +2,7 @@ import { useEffect } from "react";
 import PropTypes from "prop-types";
 import styles from "./LandingImage.module.css";
 
-function LandingImage({ imageUrl, setImageUrl}) {
-
+function LandingImage({ imageUrl, setImageUrl }) {
   useEffect(() => {
     fetch(
       "https://collectionapi.metmuseum.org/public/collection/v1/objects/436535"
@@ -12,8 +11,6 @@ function LandingImage({ imageUrl, setImageUrl}) {
       .then((data) => {
         setImageUrl(data.primaryImage);
       });
-      
-      
   });
 
   return (

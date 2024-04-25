@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function SearchBarCatalog({searchResults}) {
+function SearchBarCatalog({ searchResults }) {
   return (
     <div>
       {searchResults.map((image) => (

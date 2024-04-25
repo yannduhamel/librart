@@ -6,9 +6,7 @@ function SearchBar({ handleSubmit }) {
     <div className={styles.SearchBar}>
       <form onSubmit={handleSubmit} role="search">
         <input className={styles.Input} type="text" placeholder="Search by " />
-        <button
-          className={styles.SearchButton}
-          type="submit">
+        <button className={styles.SearchButton} type="submit">
           🔍︎
         </button>
       </form>
