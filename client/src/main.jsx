@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import LicencePage from "./pages/LicencePage/LicencePage";
 import ContactPage from "./pages/Contact/ContactPage";
 import CGUPage from "./pages/CGUPage/CGUPage";
+import DetailPage from "./pages/DetailPage/DetailPage";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,13 @@ const router = createBrowserRouter([
       {
         path: "/cgu",
         element: <CGUPage />,
+      },
+
+      {
+        path: "/detail/:id",
+        element: <DetailPage />,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3310/painting/${params.id}`),
       },
 
       {
