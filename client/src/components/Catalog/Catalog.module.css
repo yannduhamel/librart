@@ -1,0 +1,32 @@
+.catalogBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.catalogItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 90vw;
+}
+
+.catalogLink {
+  text-decoration: none;
+  color: #1d3557;
+  border: solid 2px #1d3557;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.catalogLink:visited {
+  color: #1d3557;
+}
+
+.catalogLink:hover {
+  color: #f28482;
+  border: solid 2px #f28482;
+}
