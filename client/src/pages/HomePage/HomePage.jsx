@@ -14,7 +14,7 @@ function HomePage() {
 
   useEffect(() => {
     if (displayFilteredCountry) {
-      fetch("http://localhost:3310/country/French")
+      fetch(`${import.meta.env.VITE_API_URL}/country/French`)
         .then((res) => res.json())
         .then((response) => setFilter(response));
       setSearchResults([]);
@@ -25,7 +25,7 @@ function HomePage() {
 
   useEffect(() => {
     if (displayFilteredArtist) {
-      fetch("http://localhost:3310/artist/Vincent")
+      fetch(`${import.meta.env.VITE_API_URL}/artist/Vincent`)
         .then((res) => res.json())
         .then((response) => setFilter(response));
       setSearchResults([]);
@@ -36,7 +36,7 @@ function HomePage() {
 
   useEffect(() => {
     if (displayFilteredYear) {
-      fetch("http://localhost:3310/year/1655")
+      fetch(`${import.meta.env.VITE_API_URL}/year/1655`)
         .then((res) => res.json())
         .then((response) => setFilter(response));
       setSearchResults([]);
@@ -46,7 +46,7 @@ function HomePage() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const inputValue = event.target[0].value;
-    fetch(`http://localhost:3310/search/${inputValue}`)
+    fetch(`${import.meta.env.VITE_API_URL}/search/${inputValue}`)
       .then((res) => res.json())
       .then((response) => setSearchResults(response));
     setFilter("");
