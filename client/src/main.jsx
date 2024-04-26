@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import CatalogPage from "./pages/CatalogPage/CatalogPage";
 import HomePage from "./pages/HomePage/HomePage";
 import LicencePage from "./pages/LicencePage/LicencePage";
 import ContactPage from "./pages/Contact/ContactPage";
 import CGUPage from "./pages/CGUPage/CGUPage";
+import DetailPage from "./pages/DetailPage/DetailPage";
 
 const router = createBrowserRouter([
   {
@@ -16,10 +16,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomePage />,
       },
-      {
-        path: "/catalog",
-        element: <CatalogPage />,
-      },
+
       {
         path: "/licence",
         element: <LicencePage />,
@@ -33,6 +30,13 @@ const router = createBrowserRouter([
       {
         path: "/cgu",
         element: <CGUPage />,
+      },
+
+      {
+        path: "/detail/:id",
+        element: <DetailPage />,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3310/painting/${params.id}`),
       },
 
       {

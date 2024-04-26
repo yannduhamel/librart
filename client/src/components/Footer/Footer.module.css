@@ -1,37 +1,65 @@
+* {
+  box-sizing: border-box;
+}
 @font-face {
   font-family: "montserrat-alternates";
   src: url("assets\fonts\MontserratAlternates-Regular.ttf");
 }
 
 .Footer {
-  margin: 1rem 0 0 0;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  margin: 0 auto;
   background-color: transparent;
   height: 5em;
-  width: 100%;
-  font-size: 0.8rem;
+  width: 50%;
+  font-size: 0.5rem;
   font-family: "montserrat-alternates";
   color: #1d3557;
+  padding-top: 1.5rem;
 }
 
-a {
+.cguLink {
   background-color: transparent;
-  text-align: center;
+  color: #1d3557;
+  border-radius: 5px;
+  font-size: 0.5;
 }
 
-a:visited {
+.cguLink:visited {
   color: #1d3557;
 }
 
-a:hover {
-  color: #f28482;
+.cguLink:hover {
+  background-color: #f28482;
+  color: white;
 }
+
 @media screen and (min-width: 761px) {
   .Footer {
-    height: 7em;
+    flex-direction: row;
+    align-items: last baseline;
+    justify-content: center;
+    width: 90%;
+    font-size: 0.8rem;
+    margin-top: 5rem;
+    gap: 1.5rem;
+  }
+  .cguLink {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .Footer {
+    flex-direction: row;
+    width: 50%;
+    font-size: 1rem;
+
+    color: #1d3557;
+    gap: 1.5rem;
+  }
+  .cguLink {
     font-size: 1rem;
   }
 }

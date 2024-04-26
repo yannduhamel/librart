@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "inder-regular";
+  src: url("assets/fonts/Inder-Regular.ttf");
+}
+
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailImageInfo {
+  font-family: "inder-regular";
+  color: #1d3557;
+}
+
+.detailImage {
+  max-width: 90vw;
+}
+
+@media screen and (min-width: 1240px) {
+  .detailContainer {
+    flex-direction: row;
+    max-width: 90vw;
+  }
+  .detailImageInfo {
+    font-family: "inder-regular";
+    color: #1d3557;
+    margin-right: 2rem;
+  }
+}
