@@ -17,22 +17,22 @@
   font-family: "montserrat-alternates";
   color: #1d3557;
   padding-top: 1.5rem;
+  text-align: center;
 }
 
-.cguLink {
+.footerLink {
   background-color: transparent;
   color: #1d3557;
   border-radius: 5px;
   font-size: 0.5;
 }
 
-.cguLink:visited {
+.footerLink:visited {
   color: #1d3557;
 }
 
-.cguLink:hover {
-  background-color: #f28482;
-  color: white;
+.footerLink:hover {
+  color: #f28482;
 }
 
 @media screen and (min-width: 761px) {
@@ -45,7 +45,7 @@
     margin-top: 5rem;
     gap: 1.5rem;
   }
-  .cguLink {
+  .footerLink {
     font-size: 0.8rem;
   }
 }
@@ -59,7 +59,7 @@
     color: #1d3557;
     gap: 1.5rem;
   }
-  .cguLink {
+  .footerLink {
     font-size: 1rem;
   }
 }

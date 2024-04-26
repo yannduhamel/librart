@@ -15,6 +15,11 @@
   .Logo {
     height: 13em;
   }
+
+  .Logo:hover {
+    cursor: pointer;
+  }
+
   .logoImage {
     height: 13em;
   }
