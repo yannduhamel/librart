@@ -15,6 +15,7 @@ function CatalogPage() {
     }
   }, [displayFilteredCountry]);
 
+
   const [displayFilteredArtist, setDisplayFilteredArtist] = useState(false);
 
   useEffect(() => {
