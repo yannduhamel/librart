@@ -26,6 +26,13 @@
   margin: 1rem 0;
 }
 
+.homePageTitle {
+  padding: 0 1rem;
+  color: #1d3557;
+  font-family: "inder-regular";
+  text-align: center;
+}
+
 @media screen and (min-width: 761px) {
   .imgContainer img {
     max-width: 30vw;
@@ -35,4 +42,11 @@
   .imgContainer {
     justify-content: center;
   }
+}
+
+.homePageTitle {
+  padding: 0 1rem;
+  color: #1d3557;
+  font-family: "inder-regular";
+  text-align: center;
 }

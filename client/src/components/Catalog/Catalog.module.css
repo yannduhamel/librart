@@ -30,3 +30,10 @@
   color: #f28482;
   border: solid 2px #f28482;
 }
+
+@media screen and (min-width: 761px) {
+  .catalogImage {
+    max-height: 17rem;
+    min-height: 10rem;
+  }
+}

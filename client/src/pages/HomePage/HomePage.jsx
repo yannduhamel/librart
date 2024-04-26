@@ -62,7 +62,9 @@ function HomePage() {
         setDisplayFilteredYear={setDisplayFilteredYear}
         displayFilteredYear={displayFilteredYear}
       />
-      <h1>Votre galerie d’art en libre accès</h1>
+      <h1 className={styles.homePageTitle}>
+        Votre galerie d’art en libre accès
+      </h1>
       <SearchBar handleSubmit={handleSubmit} />
       <div className={styles.imgContainer}>
         {filter && <Catalog filter={filter} />}
