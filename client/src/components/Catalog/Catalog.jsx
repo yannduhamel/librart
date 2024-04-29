@@ -12,12 +12,21 @@ function Catalog({ filter }) {
             alt="Filtered Painting"
             className={styles.catalogImage}
           />
-          <NavLink
-            to={`/detail/${item.objectID}`}
-            className={styles.catalogLink}
-          >
-            Plus de détails
-          </NavLink>{" "}
+          <div className={styles.linksContainer}>
+            <NavLink
+              to={`/detail/${item.objectID}`}
+              className={styles.catalogLink}
+            >
+              Détails
+            </NavLink>{" "}
+            <NavLink
+              className={styles.downloadLink}
+              to={item.primaryImage}
+              target="_blank"
+            >
+              Télécharger
+            </NavLink>
+          </div>
         </div>
       ))}
     </div>

@@ -8,15 +8,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
 .detailImageInfo {
   font-family: "inder-regular";
+  font-size: large;
   color: #1d3557;
 }
 
 .detailImage {
   max-width: 90vw;
+  margin-top: 3rem;
+}
+
+.downloadDetailLink {
+  font-family: "inder-regular";
+  text-decoration: none;
+  color: #1d3557;
+  border: solid 2px #1d3557;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 0.2rem;
 }
 
 @media screen and (min-width: 1240px) {
@@ -24,9 +38,18 @@
     flex-direction: row;
     max-width: 90vw;
   }
+
+  .detailTextContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
   .detailImageInfo {
-    font-family: "inder-regular";
-    color: #1d3557;
+    font-size: xx-large;
     margin-right: 2rem;
+  }
+
+  .downloadDetailLink {
+    padding: 0.5rem;
   }
 }
