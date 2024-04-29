@@ -6,28 +6,33 @@
 .ContainerButtons {
   display: flex;
   align-content: space-between;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 .FilterButton {
   font-family: "inder-regular";
   font-size: 1rem;
-  background-color: transparent;
+  background-color: #1d3557;
   border: none;
-  color: #1d3557;
+  color: #f7ede2;
   border: 2px solid #1d3557;
-  margin: 1rem;
+  margin: 0.8rem;
   border-radius: 5px;
 }
 
 .FilterButton:hover {
   background-color: #f28482;
+  border: none;
 }
 @media screen and (min-width: 761px) {
   .ContainerButtons {
     gap: 15rem;
   }
-}
-.FilterButton {
-  font-size: 1.5rem;
+  .FilterButton {
+    font-size: 1.5rem;
+  }
+
+  .FilterButton:hover {
+    cursor: pointer;
+  }
 }

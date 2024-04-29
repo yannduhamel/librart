@@ -2,14 +2,14 @@ import styles from "./ContactPage.module.css";
 
 function ContactPage() {
   return (
-    <div className={styles.main}>
-      <h1 className={styles.h1}>Suivez-nous</h1>
+    <div className={styles.contactMain}>
+      <h1 className={styles.contactTitle}>Suivez-nous</h1>
 
-      <h2 className={styles.h2}>
+      <h2 className={styles.contactSubtitle}>
         Restez connecté avec LibrArt, en nous suivant sur nos réseaux sociaux!
       </h2>
 
-      <div className={styles.text}>
+      <div className={styles.contactParagraph}>
         Rejoignez notre communauté passionnée d'art, et partagez avec nous votre
         amour pour la culture. Suivez-nous sur Facebook, Instagram, Twitter pour
         ne manquer aucune actualité. Nous sommes également disponible par mail,
@@ -23,7 +23,7 @@ function ContactPage() {
             src="../src/assets/images/Facebook.png"
             alt="logo facebook"
           />
-          <p>@librArt</p>
+          <p className={styles.socialNetwork}>facebook@librArt</p>
         </div>
 
         <div className={styles.instagram}>
@@ -32,7 +32,7 @@ function ContactPage() {
             src="../src/assets/images/Instagram.png"
             alt="logo instagram"
           />
-          <p>@librArt</p>
+          <p className={styles.socialNetwork}>instagram@librArt</p>
         </div>
 
         <div className={styles.twitter}>
@@ -41,7 +41,7 @@ function ContactPage() {
             src="../src/assets/images/Twitter.png"
             alt="logo twitter"
           />
-          <p>@librArt</p>
+          <p className={styles.socialNetwork}>twitter@librArt</p>
         </div>
 
         <div className={styles.mail}>
@@ -50,7 +50,7 @@ function ContactPage() {
             src="../src/assets/images/Email.png"
             alt="logo mail"
           />
-          <p>@librArt</p>
+          <p className={styles.socialNetwork}>contact@librArt</p>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./Menu.module.css";
 
 function Menu() {
@@ -13,16 +14,31 @@ function Menu() {
     >
       <ul className={styles.navbarList}>
         <li className={styles.navbarItem}>
-          <p className={styles.navbarLink}>Accueil</p>
+          <NavLink
+            to="/"
+            className={styles.navbarLink}
+            onClick={handleShowLinks}
+          >
+            Accueil
+          </NavLink>
         </li>
         <li className={styles.navbarItem}>
-          <p className={styles.navbarLink}>Mes favoris</p>
+          <NavLink
+            to="/contact"
+            className={styles.navbarLink}
+            onClick={handleShowLinks}
+          >
+            Suivez-nous
+          </NavLink>
         </li>
         <li className={styles.navbarItem}>
-          <p className={styles.navbarLink}>Rencontrons-nous</p>
-        </li>
-        <li className={styles.navbarItem}>
-          <p className={styles.navbarLink}>Licence</p>
+          <NavLink
+            to="/licence"
+            className={styles.navbarLink}
+            onClick={handleShowLinks}
+          >
+            Licence
+          </NavLink>
         </li>
       </ul>
       <button

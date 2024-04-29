@@ -1,27 +1,27 @@
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
-import styles from "./Catalog.module.css";
+import styles from "../Catalog/Catalog.module.css";
 
-function Catalog({ filter }) {
+function SearchBarCatalog({ searchResults }) {
   return (
     <div className={styles.catalogBox}>
-      {filter.map((item) => (
-        <div key={item.objectID} className={styles.catalogItem}>
+      {searchResults.map((image) => (
+        <div key={image.objectID} className={styles.catalogItem}>
           <img
-            src={item.primaryImageSmall}
-            alt="Filtered Painting"
+            src={image.primaryImageSmall}
+            alt="Search Result Painting"
             className={styles.catalogImage}
           />
           <div className={styles.linksContainer}>
             <NavLink
-              to={`/detail/${item.objectID}`}
+              to={`/detail/${image.objectID}`}
               className={styles.catalogLink}
             >
               Détails
             </NavLink>{" "}
             <NavLink
               className={styles.downloadLink}
-              to={item.primaryImage}
+              to={image.primaryImage}
               target="_blank"
             >
               Télécharger
@@ -33,8 +33,8 @@ function Catalog({ filter }) {
   );
 }
 
-Catalog.propTypes = {
-  filter: PropTypes.func.isRequired,
+SearchBarCatalog.propTypes = {
+  searchResults: PropTypes.node.isRequired,
 };
 
-export default Catalog;
+export default SearchBarCatalog;

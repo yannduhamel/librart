@@ -1,0 +1,46 @@
+.catalogBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.catalogItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 90vw;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+}
+.catalogLink,
+.downloadLink {
+  text-decoration: none;
+  color: #1d3557;
+  border: solid 2px #1d3557;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0.2rem auto;
+  padding: 0.5rem;
+}
+
+.catalogLink:visited,
+.downloadLink:visited {
+  color: #1d3557;
+}
+
+.catalogLink:hover,
+.downloadLink:hover {
+  color: #f28482;
+  border: solid 2px #f28482;
+}
+
+@media screen and (min-width: 761px) {
+  .catalogImage {
+    max-height: 17rem;
+    min-height: 10rem;
+  }
+}

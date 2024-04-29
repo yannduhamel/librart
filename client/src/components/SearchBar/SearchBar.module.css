@@ -2,16 +2,16 @@
   margin-bottom: 1rem;
 }
 .Input {
-  height: 2.5rem;
+  height: 3rem;
   width: 14rem;
   border-radius: 4px 4px 4px 4px;
-  background-color: transparent;
+  background-color: white;
 }
 .SearchButton {
   height: 2.5rem;
-  border-radius: 0px 4px 4px 0px;
   background-color: transparent;
   border: none;
+  font-size: xx-large;
 }
 
 @media screen and (min-width: 760px) {

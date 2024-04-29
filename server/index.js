@@ -14,6 +14,25 @@ const port = process.env.APP_PORT;
 
 const paintingObjects = require("./painting.json");
 
+app.get("/search/:query", (req, res) => {
+  const { query } = req.params;
+
+  const wantedQ = paintingObjects.filter((p) =>
+    Object.values(p).some(
+      (value) =>
+        typeof value === "string" &&
+        value.toLowerCase().includes(query.toLowerCase())
+    )
+  );
+  if (wantedQ.length > 0) {
+    res.json(wantedQ);
+  } else {
+    res.sendStatus(404).json({
+      message: "Painting not found",
+    });
+  }
+});
+
 app.get("/painting", (req, res) => {
   res.json(paintingObjects);
 });

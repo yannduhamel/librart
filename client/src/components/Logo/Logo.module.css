@@ -6,7 +6,7 @@
   background-color: transparent;
 }
 
-.Image {
+.logoImage {
   height: 8em;
   margin: 0;
 }
@@ -15,7 +15,12 @@
   .Logo {
     height: 13em;
   }
-  .Image {
+
+  .Logo:hover {
+    cursor: pointer;
+  }
+
+  .logoImage {
     height: 13em;
   }
 }

@@ -3,6 +3,11 @@
   --second-color: #1d3557;
 }
 
+@font-face {
+  font-family: "montserrat-alternates";
+  src: url("assets\fonts\MontserratAlternates-Regular.ttf");
+}
+
 .menu {
   height: 50px;
   width: 50px;
@@ -34,10 +39,21 @@
 }
 .navbarLink {
   display: block;
-  padding: 0.7em;
-  font-size: 5vw;
+  text-decoration: none;
+  font-family: "montserrat-alternates";
+  margin: 2em 0;
+  font-size: 2rem;
   color: var(--second-color);
 }
+
+.navbarLink:visited {
+  color: #1d3557;
+}
+
+.navbarLink:hover {
+  color: #f28482;
+}
+
 .burgerMenu {
   display: block;
   position: fixed;
@@ -110,7 +126,8 @@
   }
 
   .navbarLink {
-    padding: 0 1em;
+    padding: 0 2em;
+    margin: 0;
     font-size: 1.3em;
   }
   .burgerMenu {

@@ -3,14 +3,50 @@
   src: url("assets/fonts/Inder-Regular.ttf");
 }
 
-.main {
+@font-face {
+  font-family: "montserrat-alternates";
+  src: url("assets/fonts/MontserratAlternates-Regular.ttf");
+}
+
+.homeMain {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  font-size: medium;
   font-family: "inder-regular";
 }
 
-h1 {
+.imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgContainer img {
+  max-width: 80vw;
+  margin: 1rem 0;
+}
+
+.homePageTitle {
+  padding: 0 1rem;
   color: #1d3557;
+  font-family: "inder-regular";
+  text-align: center;
+}
+
+@media screen and (min-width: 761px) {
+  .imgContainer img {
+    max-width: 80vw;
+    margin: 1rem 0.5rem;
+  }
+
+  .imgContainer {
+    justify-content: center;
+  }
+}
+
+.homePageTitle {
+  padding: 0 1rem;
+  color: #1d3557;
+  font-family: "inder-regular";
+  text-align: center;
 }
