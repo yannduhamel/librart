@@ -12,12 +12,21 @@ function SearchBarCatalog({ searchResults }) {
             alt="Search Result Painting"
             className={styles.catalogImage}
           />
-          <NavLink
-            to={`/detail/${image.objectID}`}
-            className={styles.catalogLink}
-          >
-            Plus de détails
-          </NavLink>{" "}
+          <div className={styles.linksContainer}>
+            <NavLink
+              to={`/detail/${image.objectID}`}
+              className={styles.catalogLink}
+            >
+              Détails
+            </NavLink>{" "}
+            <NavLink
+              className={styles.downloadLink}
+              to={image.primaryImage}
+              target="_blank"
+            >
+              Télécharger
+            </NavLink>
+          </div>
         </div>
       ))}
     </div>
