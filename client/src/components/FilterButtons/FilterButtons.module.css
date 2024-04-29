@@ -12,18 +12,17 @@
 .FilterButton {
   font-family: "inder-regular";
   font-size: 1rem;
-  background-color: #f28482;
+  background-color: #1d3557;
   border: none;
-  color: #1d3557;
+  color: #f7ede2;
   border: 2px solid #1d3557;
-  margin: 0.4rem 0.8rem;
-  padding: 0.3rem 0.8rem;
+  margin: 0.8rem;
   border-radius: 5px;
 }
 
 .FilterButton:hover {
-  background-color: #1d3557;
-  color: #f7ede2;
+  background-color: #f28482;
+  border: none;
 }
 @media screen and (min-width: 761px) {
   .ContainerButtons {
