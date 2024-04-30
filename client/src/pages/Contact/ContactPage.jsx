@@ -1,4 +1,8 @@
 import styles from "./ContactPage.module.css";
+import facebook from "../../assets/images/Facebook.png";
+import instagram from "../../assets/images/Instagram.png";
+import twitter from "../../assets/images/Twitter.png";
+import contact from "../../assets/images/Email.png";
 
 function ContactPage() {
   return (
@@ -20,7 +24,7 @@ function ContactPage() {
         <div className={styles.facebook}>
           <img
             className={styles.facebookImage}
-            src="../src/assets/images/Facebook.png"
+            src={facebook}
             alt="logo facebook"
           />
           <p className={styles.socialNetwork}>facebook@librArt</p>
@@ -29,7 +33,7 @@ function ContactPage() {
         <div className={styles.instagram}>
           <img
             className={styles.instagramImage}
-            src="../src/assets/images/Instagram.png"
+            src={instagram}
             alt="logo instagram"
           />
           <p className={styles.socialNetwork}>instagram@librArt</p>
@@ -38,18 +42,14 @@ function ContactPage() {
         <div className={styles.twitter}>
           <img
             className={styles.twitterImage}
-            src="../src/assets/images/Twitter.png"
+            src={twitter}
             alt="logo twitter"
           />
           <p className={styles.socialNetwork}>twitter@librArt</p>
         </div>
 
         <div className={styles.mail}>
-          <img
-            className={styles.mailImage}
-            src="../src/assets/images/Email.png"
-            alt="logo mail"
-          />
+          <img className={styles.mailImage} src={contact} alt="logo mail" />
           <p className={styles.socialNetwork}>contact@librArt</p>
         </div>
       </div>
